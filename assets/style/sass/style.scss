@@ -215,9 +215,11 @@ h5 {
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
-      
+      overflow: hidden; // hide scrollbar for animate fadeInUp
+
       .text-container {
          //margin-top: 70px;
+         
 
          h1,h4 {
             color: $contrast1;

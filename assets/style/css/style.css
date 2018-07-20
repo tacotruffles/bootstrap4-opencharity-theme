@@ -194,6 +194,7 @@ h5 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 #header #header-container .text-container h1, #header #header-container .text-container h4 {
