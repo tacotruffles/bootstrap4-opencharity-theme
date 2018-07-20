@@ -136,6 +136,7 @@ h5 {
 .btn-custom {
   color: white !important;
   background-color: #61c0bd;
+  text-transform: uppercase;
   font-size: 18px;
   font-family: "museosans-500", Arial, sans-serif;
   -webkit-transition: 0.3s all ease-out;
@@ -146,5 +147,203 @@ h5 {
   -webkit-box-shadow: 1px 3px 12px 0px #b3b3b3;
           box-shadow: 1px 3px 12px 0px #b3b3b3;
   color: white !important;
+}
+
+/****************** NAVBAR ******************/
+#navbar {
+  padding: 15px 25px;
+  border: none;
+  background: white !important;
+  -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+  transition: padding-top 0.3s, padding-bottom 0.3s;
+}
+
+#navbar .navbar-toggler {
+  background: #61c0bd;
+  border: none;
+}
+
+#navbar .nav-link {
+  color: black;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "museosans-500", Arial, sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+#navbar .nav-link.active, #navbar .nav-link:hover {
+  background: #61c0bd;
+  color: white;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+/****************** HEADER ******************/
+#header {
+  overflow-x: hidden;
+}
+
+#header #header-container {
+  margin-top: 70px;
+  padding: 50px;
+  background-image: url("/assets/img/header.png");
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#header #header-container .text-container h1, #header #header-container .text-container h4 {
+  color: white;
+  line-height: 1.5em;
+}
+
+#header #header-container .text-container h1 {
+  font-size: 3em;
+  font-family: "museosans-300", Georgia, serif;
+  text-transform: uppercase;
+}
+
+#header #header-container .text-container h4 {
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+}
+
+#header #footer-container {
+  background-color: #f2f2f2;
+  padding: 30px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#header #footer-container .event-details {
+  font-family: "museosans-300", Georgia, serif;
+  font-size: 22px;
+  color: #565659;
+}
+
+#header #footer-container .event-details a {
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+}
+
+#header #footer-container p {
+  color: #5a6175;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
+/****************** GET INVOLVED ******************/
+#get-involved {
+  padding: 50px 0;
+}
+
+#get-involved .container h3 {
+  font-family: "museosans-500", Arial, sans-serif;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+#get-involved .container .row .col-md-4 {
+  margin-bottom: 70px;
+}
+
+#get-involved .container .row .col-md-4 img {
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+#get-involved .container .row .col-md-4 h4 {
+  font-family: "museosans-500", Arial, sans-serif;
+  font-size: 1.5em;
+}
+
+#get-involved .container .row .col-md-4 p {
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+}
+
+#get-involved .container .row .col-md-4 a {
+  margin-top: 10px;
+}
+
+/****************** MISSON ******************/
+#mission {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#mission .container h3 {
+  font-size: 2.5em;
+}
+
+#mission .container h3, #mission .container h4 {
+  font-family: "museosans-500", Arial, sans-serif;
+}
+
+#mission .container h5 {
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+}
+
+#mission .container .row .col-md-4 .card {
+  border: none;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+#mission .container .row .col-md-4 .card .icon-container {
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 8px solid white;
+  background: #61c0bd;
+  margin-top: -45px;
+}
+
+#mission .container .row .col-md-4 .card .icon-container img {
+  padding: 16px;
+  width: 75px;
+  height: 70px;
+}
+
+#mission .container .row .col-md-4 .card .card-body .card-title {
+  color: #61c0bd;
+  margin-bottom: 15px;
+  font-family: "museosans-300", Georgia, serif;
+  font-size: 1.5em;
+}
+
+#mission .container .row .col-md-4 .card .card-body .card-text {
+  font-family: "museosans-300", Georgia, serif;
+  font-size: 1.1em;
+}
+
+/****************** MEDIA QUERY ******************/
+@media (min-width: 300px) {
+  #navbar {
+    -webkit-box-shadow: 0px 1px 7px #5a6175;
+            box-shadow: 0px 1px 7px #5a6175;
+  }
+  #navbar.navbar-shrink {
+    padding: 5px 10px;
+    background: white;
+  }
+}
+
+@media (max-width: 768px) {
+  #footer-container .event-details {
+    font-size: 18px;
+    text-align: center;
+  }
+  #footer-container .event-details a {
+    font-size: 18px;
+  }
+  #footer-container p {
+    font-size: 14px;
+    text-align: center !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

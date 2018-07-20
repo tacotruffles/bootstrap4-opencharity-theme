@@ -10,55 +10,154 @@
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="assets/style/css/bootstrap.min.css">
    <link rel="stylesheet" href="assets/style/fonts/font-awesome/css/fontawesome.min.css">
+   <link rel="stylesheet" href="assets/style/css/owl.carousel.min.css">
+   <link rel="stylesheet" href="assets/style/css/owl.theme.default.min.css">
    <link rel="stylesheet" href="assets/style/css/style.css">
 
    <title>OpenCharity Theme</title>
 </head>
 
-<body>
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+<body id="#top">
+   <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#top">
+         <img src="/assets/img/logo.png" width="160" height="30" alt="">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
          aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-               <a class="nav-link" href="#">Home
-                  <span class="sr-only">(current)</span>
-               </a>
+         <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+               <a class="nav-link" href="#get-involved">Get Involved</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="#">Link</a>
+               <a class="nav-link" href="#mission">Mission</a>
             </li>
-            <li class="nav-item dropdown">
-               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
-                  Dropdown
-               </a>
-               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-               </div>
+
+            <li class="nav-item">
+               <a class="nav-link" href="#">Event</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link disabled" href="#">Disabled</a>
+               <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Conact</a>
             </li>
          </ul>
       </div>
    </nav>
 
-   <a class="btn btn-custom btn-lg">Hello</a>
+   <!-- HEADER SECTION -->
+   <header id="header">
+      <div id="header-container" class="container-fluid text-center">
+         <div class="text-container">
+            <h1>Sharing Ideas for Charities</h1>
+            <h4>Many charities’ goals are similar, as is the functionality we require, but little shared working takes place.</h4>
+            <h4>By working together, driving shared areas of interest and influencing open source developments we can bring efficiencies,
+               improve the digital experience for our users, and have great impact.</h4>
+            <h4>Together we can make a bigger diference.</h4>
+         </div>
+      </div>
+      <!-- end body header -->
+      <div id="footer-container" class="container-fluid">
+         <div class="row mt-2">
+            <div class="col-md-10 mb-2">
+               <p class="text-left event-details">
+                  <a href="#">Next Event: </a> June 23
+                  <sup>rd</sup> 2018 (18:30 - 21:00)</p>
+               <p>Cancer Research UK, Angel Building, 407 St John Street, London EC1V 4AD</p>
+            </div>
+            <div class="col-md-2">
+               <a href="" class="btn btn-custom btn-block">Register</a>
+            </div>
+         </div>
+
+
+      </div>
+      <!-- end footer header-->
+   </header>
+
+   <!-- GET INVOVLED SECTION -->
+   <section id="get-involved">
+      <div class="container text-center">
+         <h3>Get Involved</h3>
+         <div class="row">
+            <div class="col-md-4">
+               <img src="/assets/img/get-involved-1.png" class="img-fluid" alt="Meetup Group">
+               <h4>We do meetings</h4>
+               <p>We organize our meetings through the OpenCharity MeetUp group</p>
+               <a href="" class="btn btn-custom">MeetUp Group</a>
+            </div>
+            <div class="col-md-4">
+               <img src="/assets/img/get-involved-2.png" class="img-fluid" alt="Slack Channel">
+               <h4>We Collaborate</h4>
+               <p>OpenCharity have a slack group for daily collaboration</p>
+               <a href="" class="btn btn-custom">Slack Channel</a>
+            </div>
+            <div class="col-md-4">
+               <img src="/assets/img/get-involved-3.png" class="img-fluid" alt="Google Group">
+               <h4>We Share</h4>
+               <p>We have a Google Group set up to share tools and documents</p>
+               <a href="" class="btn btn-custom">Google Group</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- MISSION SECTION -->
+   <section id="mission">
+      <div class="container text-center">
+         <h3>Our Mission</h3>
+         <h5 class="lead">Charities and Partners collaborating and sharing open solutions and ideas to create value in the digital space.
+         </h5>
+         <h4>If you are a charity or a supplier, we are ready to welcome you.</h4>
+         <div class="row">
+            <div class="col-md-4 mb-4">
+               <div class="card">
+                  <div class="icon-container">
+                     <img src="assets/img/icons/mission-1.png" alt="Ideas">
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">We help charities</h5>
+                     <p class="card-text">share knowledge and working practice to make the best technology choices.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 mb-4">
+               <div class="card">
+                  <div class="icon-container">
+                     <img src="assets/img/icons/mission-2.png" alt="Support">
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">We bring together</h5>
+                     <p class="card-text">charities and suppliers to the charity sector to share best practices.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="card">
+                  <div class="icon-container">
+                     <img src="assets/img/icons/mission-3.png" alt="Encourage">
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">We encourage</h5>
+                     <p class="card-text">collaboration and innovation for the good of the charity sector.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
 
    <!-- Optional JavaScript -->
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
    <script src="assets/style/js/jquery-3.3.1.min.js"></script>
    <script src="assets/style/js/popper.min.js"></script>
    <script src="assets/style/js/bootstrap.min.js"></script>
+   <script src="assets/style/js/owl.carousel.min.js"></script>
    <script src="assets/style/js/main.js"></script>
 </body>
 

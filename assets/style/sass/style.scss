@@ -30,9 +30,11 @@
 */
 $primary: #61c0bd; // turqouise
 $secondary: #565659; // dark-grey
-$tertiary: #5a6175; // light-gret
+$tertiary: #5a6175; // light-grey
 $contrast1: white; 
 $contrast2: black;
+
+$overlay: rgba(0,0,0, 0.4);
 
 $muse-300-font: "museosans-300", Georgia , serif;
 $muse-500-font: "museosans-500", Arial , sans-serif;
@@ -158,12 +160,241 @@ h5 {
 .btn-custom {
    color: $contrast1 !important;
    background-color: $primary;
+   text-transform: uppercase;
    font-size: 18px;
    font-family: $muse-500-font;
    transition: 0.3s all ease-out;
+   
 
    &:hover {
       box-shadow: 1px 3px 12px 0px darken($contrast1,30%);
       color: $contrast1 !important;
    }
+}
+
+/****************** NAVBAR ******************/
+#navbar {
+
+   padding: 15px 25px;
+   border: none;
+   background: white !important;
+   transition: padding-top 0.3s, padding-bottom 0.3s;
+
+   .navbar-toggler {
+      background: $primary;
+      border: none;
+   }
+
+   .nav-link {
+      color: $contrast2;
+      font-weight: 400;
+      font-size: 14px;
+      font-family: $muse-500-font;
+      text-transform: uppercase;
+      transition: all 0.3s ease-out;
+
+      &.active, &:hover {
+         background: $primary;
+         color: $contrast1;
+         transition: all 0.5s ease-out;
+      }
+   }
+
+}
+
+/****************** HEADER ******************/
+#header {
+   overflow-x: hidden;
+
+   #header-container {
+      margin-top: 70px;
+      padding: 50px;
+      background-image: url('/assets/img/header.png');
+      background-color: $overlay;
+      background-blend-mode: multiply;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      
+      .text-container {
+         //margin-top: 70px;
+
+         h1,h4 {
+            color: $contrast1;
+            line-height: 1.5em;
+         }
+
+         h1 {
+            font-size: 3em;
+            font-family: $muse-300-font;
+            text-transform: uppercase;
+         }
+
+         h4 {
+            font-family: $opensans-font;
+         }
+         
+      }
+   } // end #header-container
+
+   #footer-container {
+      background-color: darken($contrast1, 5%);
+      padding: 30px;
+      border-bottom: 1px solid darken($contrast1, 10%);
+
+      .event-details {
+         font-family: $muse-300-font;
+         font-size: 22px;
+         color: $secondary;
+
+         a {
+            font-family: $opensans-font;
+            font-size: 22px;
+         }
+      }
+
+      p {
+         color: $tertiary;
+         font-family: $opensans-font;
+         font-size: 18px;
+      }
+   } // end #footer-container
+}
+
+/****************** GET INVOLVED ******************/
+#get-involved {
+   padding: 50px 0;
+
+   .container {
+      h3 {
+         font-family: $muse-500-font;
+         font-size: 2.5em;
+         //margin-bottom: 50px;
+         text-transform: uppercase;
+      }
+
+      .row {
+         .col-md-4 {
+
+            margin-bottom: 70px;
+
+            img {
+               height: 150px;
+               margin: 0 auto;
+               //display: block;
+               margin-bottom: 30px;
+            }
+
+            h4 {
+               font-family: $muse-500-font;
+               font-size: 1.5em;
+            }
+
+            p {
+               font-family: $opensans-font;
+               line-height: 1.5em;
+            }
+            a {
+               margin-top: 10px;
+               //margin-bottom: 10px;
+            }
+         }
+      }
+   }
+}
+
+/****************** MISSON ******************/
+#mission {
+   background-color: darken($contrast1, 5%);
+   padding: 50px 0;
+   border-top: 1px solid darken($contrast1, 10%);
+   border-bottom: 1px solid darken($contrast1, 10%);
+
+   .container {
+
+      h3 {
+         font-size: 2.5em;
+
+      }
+
+      h3, h4 {
+         font-family: $muse-500-font;
+      }
+
+      h5 {
+         font-family: $opensans-font;
+      }
+
+      .row {
+         .col-md-4 {
+            .card {
+               border: none;
+               border-radius: 5px;
+               margin-top: 50px;
+               
+               .icon-container {
+
+                  border-radius: 50%;
+                  margin: 0 auto;
+                  border: 8px solid $contrast1;
+                  background: $primary;
+                  margin-top: -45px;
+
+                  img {
+                     padding: 16px;
+                     width: 75px;
+                     height: 70px;
+                  }
+               }
+   
+               .card-body {
+                  .card-title {
+                     color: $primary;
+                     margin-bottom: 15px;
+                     font-family: $muse-300-font;
+                     font-size: 1.5em;
+                  }
+   
+                  .card-text {
+                     font-family: $muse-300-font;
+                     font-size: 1.1em;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+/****************** MEDIA QUERY ******************/
+@media (min-width: 300px) {
+
+   #navbar {
+      box-shadow: 0px 1px 7px $tertiary;
+
+      &.navbar-shrink {
+         padding: 5px 10px;
+         background: $contrast1;
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   #footer-container { // Center #header #footer-container text for small screens
+
+      .event-details {
+         font-size: 18px;
+        
+         text-align: center;
+
+         a {
+            font-size: 18px;
+         }
+      }
+
+      p {
+         font-size: 14px;
+         text-align: center !important;
+      }
+   } // end #footer-container
 }
