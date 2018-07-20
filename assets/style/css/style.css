@@ -314,11 +314,149 @@ h5 {
   margin-bottom: 15px;
   font-family: "museosans-300", Georgia, serif;
   font-size: 1.5em;
+  text-transform: capitalize;
 }
 
 #mission .container .row .col-md-4 .card .card-body .card-text {
   font-family: "museosans-300", Georgia, serif;
   font-size: 1.1em;
+}
+
+/****************** MEMBERS ******************/
+#members {
+  padding: 50px 50px 0 50px;
+}
+
+#members .container h3 {
+  font-family: "museosans-500", Arial, sans-serif;
+  margin-bottom: 50px;
+}
+
+#members .container #members-slider {
+  overflow-y: hidden;
+}
+
+#members .container #members-slider img {
+  height: 50px;
+  width: 120px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#members .container #members-slider img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+#members .container .owl-carousel .owl-dots.disabled {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+#members .container .owl-theme .owl-dots .owl-dot.active span,
+#members .container .owl-theme .owl-dots .owl-dot:hover span {
+  background: #61c0bd !important;
+}
+
+#members .container .owl-theme .owl-dots .owl-dot span {
+  background: #565659 !important;
+}
+
+/****************** EVENT ******************/
+#event {
+  padding: 50px;
+  font-family: "museosans-500", Arial, sans-serif;
+}
+
+#event .container .row .col-md-4 .card a img:hover {
+  opacity: 0.7;
+  -webkit-transition: all 0.7 ease-out;
+  transition: all 0.7 ease-out;
+}
+
+/****************** BLOG ******************/
+#blog {
+  padding: 0px 0px 50px 0px;
+}
+
+#blog h3 {
+  font-family: "museosans-500", Arial, sans-serif;
+  color: #5a6175;
+  margin: 50px 0px;
+}
+
+#blog #blog-slider .item a h4 {
+  font-family: "OpenSans-SemiBold", Arial, sans-serif;
+  color: #61c0bd;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+#blog #blog-slider .item a .main-p {
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  color: #565659;
+  line-height: 1.5;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+#blog #blog-slider .item a p {
+  color: #61c0bd;
+}
+
+#blog .owl-nav {
+  display: inline-block;
+  position: relative;
+  left: 48%;
+  margin-top: 20px;
+}
+
+#blog .owl-prev {
+  font-size: 30px;
+  color: #61c0bd;
+  margin-right: 25px;
+}
+
+#blog .owl-next {
+  font-size: 30px;
+  color: #61c0bd;
+}
+
+/****************** CONTACT ******************/
+#contact {
+  padding: 50px 0;
+}
+
+#contact label {
+  margin-bottom: 10px;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+}
+
+/****************** CONTACT ******************/
+footer {
+  padding: 20px;
+  background: #61c0bd;
+}
+
+footer .container-fluid .social {
+  margin-bottom: 10px;
+}
+
+footer .container-fluid .social a {
+  color: white;
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+footer .container-fluid .copyright p {
+  color: black;
+  font-size: 20px;
+}
+
+footer .container-fluid .copyright p a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
 }
 
 /****************** MEDIA QUERY ******************/
