@@ -165,6 +165,7 @@ h5 {
 
 #navbar .nav-link {
   color: black;
+  border-radius: 3px;
   font-weight: 400;
   font-size: 14px;
   font-family: "museosans-500", Arial, sans-serif;
@@ -468,6 +469,9 @@ footer .container-fluid .copyright p a {
   #navbar.navbar-shrink {
     padding: 5px 10px;
     background: white;
+  }
+  #navbar .nav-link {
+    padding: 10px;
   }
 }
 
