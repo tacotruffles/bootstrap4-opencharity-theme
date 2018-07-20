@@ -1,0 +1,150 @@
+/****************** FONTS ****************************/
+@font-face {
+  font-family: "museosans-300";
+  src: url("../fonts/museosansrounded-300-webfont.svg") format("svg");
+  src: url("../fonts/museosansrounded-300-webfont.ttf") format("ttf");
+  src: url("../fonts/museosansrounded-300-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "museosans-500";
+  src: url("../fonts/museosans-500.otf");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../fonts/OpenSans-SemiBold.ttf");
+}
+
+/****************** VARIABLES ************************/
+/*
+1- main color : #61c0bd
+2- white color: #ffffff
+3- dark grey color: #565659
+4- light grey color: #5a6175
+*/
+/****************** CUSTOM RESET *********************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/****************** CUSTOM SETTINGS ******************/
+html {
+  background: white;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: white;
+  color: #5a6175;
+  overflow-x: hidden;
+}
+
+p, ul, ol {
+  margin-bottom: 0.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+sup {
+  font-size: xx-small;
+  vertical-align: super;
+}
+
+p a, h5 a {
+  font-weight: bold;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+}
+
+h1 {
+  font-size: 28px;
+  font-family: "museosans-300", Georgia, serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-family: "museosans-300", Georgia, serif;
+}
+
+h3 {
+  font-size: 21px;
+  font-family: "museosans-300", Georgia, serif;
+}
+
+h4 {
+  font-size: 18px;
+  font-family: "museosans-300", Georgia, serif;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn-custom {
+  color: white !important;
+  background-color: #61c0bd;
+  font-size: 18px;
+  font-family: "museosans-500", Arial, sans-serif;
+  -webkit-transition: 0.3s all ease-out;
+  transition: 0.3s all ease-out;
+}
+
+.btn-custom:hover {
+  -webkit-box-shadow: 1px 3px 12px 0px #b3b3b3;
+          box-shadow: 1px 3px 12px 0px #b3b3b3;
+  color: white !important;
+}
+/*# sourceMappingURL=style.css.map */
